@@ -1,0 +1,26 @@
+{% assign content = site.data.settings['footer'] %}
+{% assign social = site.data.settings['social'] %}
+
+<!-- ==================== Start Footer ==================== -->
+
+<footer>
+    <div class="policy-box">
+        <span>{{ site.title }} 2025 . All rights reserved. </span>
+        <ul>
+            <li><a href="#">{{ site.email }}</a></li>
+            <li><a href="#">{{ site.phone }}</a></li>
+        </ul>
+    </div>
+    <!-- footer social -->
+    <div class="footer-social">
+        <ul>
+            {% for social in site.socials %}
+               <li><a href="{{ social.link }}" target="_blank" ><i class="{{ social.icon }}"></i></a></li>
+            {% endfor %}
+
+        </ul>
+    </div>
+    <!-- footer social end -->
+    <div class="to-top"><i class="fa fa-angle-up"></i></div>
+</footer>
+<!-- ==================== End Footer ==================== -->

@@ -1,0 +1,108 @@
+
+title: Félix Moulin
+phone: 07 89 60 46 22
+email: lobwick@hotmail.fr
+description: >- # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: jekyllrb
+github_username:  jekyll
+
+# paginations & permalinks
+paginate: 6
+paginate_path: "/blog/page:num/"
+permalink: pretty
+
+
+plugins:
+  - jekyll-archives
+  - jekyll-paginate
+  - jekyll-feed
+  - jekyll-seo-tag
+
+socials:
+  - link: https://instagram.com/lobwick
+    icon: fa fa-instagram
+
+navbar:
+    - link: index
+      label: Accueil
+    - link: projects
+      label: Projects
+    - link: blog
+      label: Articles
+    - link: about
+      label: À propos
+
+translations:
+  back_home: "Retour à l'accueil"
+  home: "Accueil"
+  see_pictures: "Voir les photos"
+  page_not_found: "Page non trouvée"
+  not_found_text: "La page n'a pas encore été prise en photo !"
+  share: "Partager"
+  filter_text: "Filtrer"
+  categories: "Catégories"
+  client: "Client"
+  date: "Date"
+  location: "Lieu"
+  last_articles: "Derniers articles"
+  articles_categories: "Catégories d'articles"
+  search: "Recherche ..."
+  sponsors: "Sponsors"
+
+home_page_sliders_text:
+  - "Travel Photography"
+  - "Portraits Photography"
+  - "Nature Photography"
+home_page_sliders_pictures:
+  one:
+    - /assets/images/bg/22.jpg
+    - /assets/images/bg/35.jpg
+    - /assets/images/bg/16.jpg
+  two:
+      - /assets/images/bg/4.jpg
+      - /assets/images/bg/19.jpg
+      - /assets/images/bg/28.jpg
+  three:
+      - /assets/images/bg/55.jpg
+      - /assets/images/bg/31.jpg
+      - /assets/images/bg/9.jpg
+  four:
+      - /assets/images/bg/42.jpg
+      - /assets/images/bg/8.jpg
+      - /assets/images/bg/26.jpg
+
+
+# formsubmit.io
+formspree_endpoint: "https://formspree.io/f/your_endpoint" # sign up on https://formspree.io/ and create your form endpoint
+
+
+
+categories_pictures:
+  portrait: "Portrait"
+  landscape: "Paysage"
+  sport: "Sport"
+
+collections:
+  projects:
+    output: true
+    permalink: /:collection/:path/
+  posts:
+    output: true
+    permalink: /blog/:path/
+
+# archives
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layouts:
+    category: archive
+    tag: archive
+  permalinks:
+    category: /categories/:name/
+    tag: /tags/:name/

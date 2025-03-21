@@ -1,0 +1,84 @@
+---
+layout: default
+---
+
+<div class="content-holder elem scale-bg2 transition3" >
+    <!-- Fixed title  -->
+    <div class="fixed-title"><span>{{ site.translations.home }}</span></div>
+    <a href="/projects" class="bth_btn"><i class="fa fa-th" aria-hidden="true"></i><span>{{ site.translations.see_pictures }}</span></a>
+    <!-- Fixed title end -->
+    <!--=============== Content ===============-->
+    <div class="content full-height">
+        <!-- Home wrapper -->
+        <div class="full-height-wrap">
+            <!-- Hero title -->
+            <div class="slide-title-holder">
+                <div class="slide-title">
+                    <span class="subtitle">Sed non arcu non sem commodo ultricies.</span>
+                    <div class="separator-image"><img src="/assets/images/separator.png" alt=""></div>
+                    <div class="hero-text-holder">
+                        <div class="hero-text owl-carousel">
+                            {% for text in site.home_page_sliders_text %}
+                                <div class="item">{{ text}}</div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    <h4><a  href="/projects">{{ site.translations.see_pictures }}</a></h4>
+                </div>
+            </div>
+            <!-- Hero title end  -->
+            <!-- 1 -->
+
+            <div class="hero-grid">
+                <div class="overlay"></div>
+                <div class="hero-slider synkslider owl-carousel" data-attime="3220" data-rtlt="false">
+                    {% for url in site.home_page_sliders_pictures.one %}
+                    <div class="item">
+                        <div class="bg" style="background-image:url('{{ url }}')"></div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+
+            <!-- 1 end -->
+            <!-- 2 -->
+            <div class="hero-grid">
+                <div class="overlay"></div>
+                <div class="hero-slider owl-carousel" data-attime="3220" data-rtlt="false">
+                    {% for url in site.home_page_sliders_pictures.two %}
+                    <div class="item">
+                        <div class="bg" style="background-image:url('{{ url }}')"></div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            <!-- 2end -->
+            <!-- 3 -->
+            <div class="hero-grid">
+                <div class="overlay"></div>
+                <div class="hero-slider owl-carousel"  data-attime="3220" data-rtlt="true">
+                    {% for url in site.home_page_sliders_pictures.three %}
+                    <div class="item">
+                        <div class="bg" style="background-image:url('{{ url }}')"></div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            <!-- 3end -->
+            <!-- 4 -->
+            <div class="hero-grid">
+                <div class="overlay"></div>
+                <div class="hero-slider owl-carousel" data-attime="3220" data-rtlt="true">
+                    {% for url in site.home_page_sliders_pictures.four %}
+                    <div class="item">
+                        <div class="bg" style="background-image:url('{{ url }}')"></div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            <!-- 4end -->
+        </div>
+    </div>
+    <!-- Share container  -->
+    <div class="share-container  isShare"  data-share="['facebook','pinterest','twitter','linkedin']"></div>
+</div>

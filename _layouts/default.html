@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+
+    {%- include head.html -%}
+
+    {% assign settings = site.data.settings['settings'] %}
+
+    <body>
+        <!--Loader  -->
+        <div class="loader"><i class="fa fa-refresh fa-spin"></i></div>
+        <!--Loader end  -->
+        <!--================= main start ================-->
+        <div id="main">
+            {%- include navbar.html -%}
+
+            <!--=============== wrapper ===============-->
+            <div id="wrapper">
+                <!--=============== Conten holder  ===============-->
+
+                 {{ content }}
+
+                <!-- content holder end -->
+            </div>
+
+            <!-- wrapper end -->
+            <div class="left-decor"></div>
+            <div class="right-decor"></div>
+            <!--=============== Footer ===============-->
+            {%- include footer.html -%}
+            <!-- footer end -->
+        </div>
+        <!-- Main end -->
+
+        {%- include scripts.html -%}
+
+    </body>-
+
+
+</html>
+
