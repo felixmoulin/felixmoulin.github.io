@@ -26,7 +26,8 @@ layout: default
             <div class="p_horizontal_wrap">
                 <div id="portfolio_horizontal_container">
 
-                     {% for project in site.projects %}
+                    {% assign sorted_projects = site.projects | sort: 'date' | reverse %}
+                     {% for project in sorted_projects %}
                         <!-- portfolio item -->
                         <div class="portfolio_item {% for category in project.categories %} {{ category | downcase }}{% if forloop.last == false %} {% endif %} {% endfor %}">
                             <img  src="{{ project.cover }}"   alt="">
