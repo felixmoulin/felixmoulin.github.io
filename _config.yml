@@ -32,10 +32,10 @@ navbar:
       label: Accueil
     - link: projects
       label: Projects
-    - link: blog
-      label: Articles
     - link: about
       label: À propos
+    #- link: blog
+      #label: Articles
 
 translations:
   back_home: "Retour à l'accueil"
