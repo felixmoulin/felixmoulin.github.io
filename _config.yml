@@ -54,27 +54,28 @@ translations:
   search: "Recherche ..."
   sponsors: "Sponsors"
 
+home_page_slogan: "Photographe sportif et de paysage"
 home_page_sliders_text:
-  - "Travel Photography"
-  - "Portraits Photography"
-  - "Nature Photography"
+  - "Félix Moulin"
+  - "Félix Moulin"
+  - "Félix Moulin"
 home_page_sliders_pictures:
   one:
-    - /assets/images/bg/22.jpg
-    - /assets/images/bg/35.jpg
-    - /assets/images/bg/16.jpg
+    - /assets/projects/tmp/nature1.jpeg
+    - /assets/projects/tmp/nature3.jpeg
+    - /assets/projects/tmp/nature4.jpeg
   two:
-      - /assets/images/bg/4.jpg
-      - /assets/images/bg/19.jpg
-      - /assets/images/bg/28.jpg
+    - /assets/projects/2025-02-02_lievin_cx/2025_02_02_cx_world_championship-066.jpg
+    - /assets/projects/2025-02-02_lievin_cx/2025_02_02_cx_world_championship-073.jpg
+    - /assets/projects/2025-02-02_lievin_cx/2025_02_02_cx_world_championship-096.jpg
   three:
-      - /assets/images/bg/55.jpg
-      - /assets/images/bg/31.jpg
-      - /assets/images/bg/9.jpg
+    - /assets/projects/2025-01-23_les_arcs/2025_01_23_puff_snowbard-45.jpg
+    - /assets/projects/2025-01-23_les_arcs/2025_01_23_puff_snowbard-55.jpg
+    - /assets/projects/2025-01-23_les_arcs/2025_01_23_puff_snowbard-20.jpg
   four:
-      - /assets/images/bg/42.jpg
-      - /assets/images/bg/8.jpg
-      - /assets/images/bg/26.jpg
+    - /assets/projects/tmp/mer.JPG
+    - /assets/projects/tmp/mer2.JPG
+    - /assets/projects/tmp/mer3.JPG
 
 
 # formsubmit.io
